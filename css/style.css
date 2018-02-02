@@ -1,0 +1,236 @@
+/* Здесь будут храниться стили нашего сайта */
+body {
+	/*внешний отступ(поля)*/
+    margin: 0;
+    /* в названии шрифта обязательны одинарные кавычки?*/
+	font-family: 'Roboto';
+	font-size: 18px;
+}
+
+img{
+	max-width: 100%; /*картинка не должна превышать размеры "родителя"*/
+}
+
+header {
+	  /*отступ внутри элемента*/
+	  padding-top: 59px; 
+	  background-color: #3a7dfd;
+	  color: #ffffff; 
+	  padding-bottom: 22px;
+}
+
+.header-pretitle {
+	margin-top: 102px; 
+	font-weight: 700;
+}
+
+.header-title {
+	font-size: 48px;
+	font-weight: 700;
+	margin-top: 21px;
+	line-height: 46.81px;
+
+}
+.header-subtitle {
+	/*если шрифт не жирный, то не надо прописывать толщину 400?
+	она стоит по умолчанию? или нужно прописать в header?*/
+	font-weight: 400;
+	margin-top: 20px;
+}
+.header-button {
+	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
+	border-radius: 50px;
+	background-color: #ffffff;
+	color: #072b6f;
+	font-size: 18px;
+	font-weight: 700;
+	border: none;
+	cursor: pointer;
+	/*padding-top: 17px;
+	padding-bottom: 19px;
+	padding-left: 55px;
+	padding-right: 57px;*/
+	/*записываем сверху по часовой стрелке
+	padding: 17px 57px 19px 55px;
+	если отступы по с параллельных боков одинаковы, то можно заисать короче:*/
+	padding: 18px 56px;
+	margin-top: 33px; /*а визуально смотриться не больше 20...*/
+	/*возможно тут стоит также прописать margin-bottom для заголовка, как мы сделали в основной части
+	 после слова"портфолио"?*/
+
+}
+header small {
+	font-size: 12px;
+	display: block;
+	font-weight: 400;/* тот же вопрос*/
+	margin-top: 9px;
+	text-align: center;
+
+}
+.header-button-block {
+	max-width: 210px;
+}
+/*СЕКЦИЯ ПОРТФОЛИО*/
+.portfolio {
+	background-color: #dddddd;
+	/*padding: 44px 161px 71px 160px;*/
+}
+.portfolio-block{
+	/*border: 3px solid #ffffff; - ненужно?*/
+	background-color: #ffffff;
+	padding-top: 29px;
+	padding-bottom: 44px;
+	/*text-align: center; - здесь нельзя вместо отдельных ниже?*/
+	
+}
+.portfolio-title {
+	color: #072b6f;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.8px; /*это ненужно?*/
+	font-size: 18px; /*зачем надо прописывать, если мы указали это для body?*/
+	margin-bottom: 10px;/*пока не понимаю как это влияет на сужение пространства
+	между следующей подписью(что-то про встроеные поля заголовков)*/
+}
+.portfolio-subtitle{
+	color: #7bb9ff;
+	font-size: 14px;
+	font-weight: 400;/* тот же вопрос*/
+	margin-top : 10px;
+	margin-bottom: 30px;
+		
+}
+.portfolio-title, .portfolio-subtitle {
+	text-align: center;
+}
+.portfolio-col-1{
+	padding-left: 50px;
+
+}
+.portfolio-col-2{
+	padding-right: 50px;
+}
+.portfolio-block h3{
+	color: #072b6f;
+	font-size: 18px;/*зачем надо прописывать, если мы указали это для body?*/
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top : 16px;/*это ненужно?*/
+}
+.portfolio-col-1, .portfolio-col-2{
+	/*описала не совсем как на видео,но как было показано на одном из примеров) 
+	вроде работает=)*/
+	color: #8f8f8f;
+	font-size: 14px;
+	font-weight: 400;
+	margin-top : 20px;/*это ненужно?*/
+}
+.portfolio-block a{
+	color: #072b6f;
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: underline;
+	margin-top : 26px;/*это ненужно?*/
+}
+/*ПОДВАЛ*/
+footer{
+	background-color: #3a7dfd;
+	color: #ffffff;
+	padding-top: 60px;
+	padding-bottom: 110px;
+}
+.footer-author{
+	font-size: 24px;
+	margin-bottom: 7px; 
+	/*это ненужно?
+	font-weight: 700;
+	line-height: 40px;
+	margin-top : 14px;*/
+	
+}
+.footer-text{
+	margin-top : 0; /*здесь не пишем px?*/
+	/*это ненужно?
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 40px;*/
+	
+}
+.social-block{
+	text-align: center;
+}
+.social-block a{
+	display: inline-block;
+	margin-left: 13px;
+	margin-right: 13px;
+
+}
+.footer-cta-block{
+	text-align: center;
+}
+.footer-button{
+	display: inline-block;
+	cursor: pointer;
+	border: 1px solid #ffffff;
+	background-color: transparent;
+	color: #ffffff;
+	font-size: 18px;
+	border-radius: 50px;
+	padding: 12px 40px;
+/* это ненужно?
+	width: 165px;
+	height: 48px;
+		font-weight: 400;
+	line-height: 39.8px;*/
+}
+
+@media (max-width: 1200px) {
+	.header-pretitle {
+	margin-top: 60px; 
+	}
+}
+@media (max-width: 992px) {
+	.header-img{
+		display: none;
+	}
+	.header-pretitle {
+		margin-top: 10px; 
+	}
+	.footer-author{
+		font-size: 18px;
+	}
+	.footer-text{
+		font-size: 14px;
+	}	
+	.social-block a{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.social-block img{
+		width: 30px;
+	}
+	.footer-button{
+		font-size: 14px;
+		padding: 8px 35px;
+	}
+}
+@media (max-width: 768px) {
+	/*.portfolio-col-1,.portfolio-col-2 {
+		padding-left: 20px;
+		padding-right: 20px;
+	}*/
+	.portfolio-col-1 {
+		margin-bottom: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.portfolio-col-2 {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.footer-author, .footer-text {
+		text-align: center;
+	}
+
+
+}
