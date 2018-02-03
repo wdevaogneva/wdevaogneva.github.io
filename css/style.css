@@ -7,7 +7,7 @@ body {
 	font-size: 18px;
 }
 
-img{
+img {
 	max-width: 100%; /*картинка не должна превышать размеры "родителя"*/
 }
 
@@ -47,8 +47,7 @@ header {
 	font-size: 18px;
 	font-weight: 700;
 	border: none;
-	cursor: pointer;
-
+	cursor: pointer;	
 	/*padding-top: 17px;
 	padding-bottom: 19px;
 	padding-left: 55px;
@@ -60,7 +59,16 @@ header {
 	margin-top: 33px; /*а визуально смотриться не больше 20...*/
 	/*возможно тут стоит также прописать margin-bottom для заголовка, как мы сделали в основной части
 	 после слова"портфолио"?*/
+	 /*transition - отвечает за плавность пишем как trs*/
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
 
+}
+
+.header-button:hover {  /*hover -псевдокласс отвеающий за наведение на объект*/
+	/* здесь критично отсутствие пробела после двоеточия!*/
+	box-shadow: none;
 }
 header small {
 	font-size: 12px;
@@ -187,7 +195,14 @@ footer{
 		font-weight: 400;
 	line-height: 39.8px;*/
 }
-
+.footer-button:hover{
+	background-color: #ffffff;
+	color: #3a7dfd;
+	font-weight: 700;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
 @media (max-width: 1200px) {
 	.header-pretitle {
 	margin-top: 60px; 
